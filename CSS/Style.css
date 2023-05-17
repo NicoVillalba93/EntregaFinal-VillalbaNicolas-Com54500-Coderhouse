@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+/*-----------nav*-----------*/
+header {
+    background-color: rgb(31, 28, 28);
+    position: sticky;
+    top: 0;
+}
+.nav-logo{
+    display: flex;
+    padding-left: 40px ;
+    width: 150px;
+
+}
+.nav-logo img{
+        width: 100%;
+        height: auto;
+}
+nav{
+    display: flex;
+    padding: 20px 20px;
+    justify-content: space-between;
+    
+}
+nav ul{
+    display: flex;
+    padding-top: 10px;
+    gap: 30px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(241, 238, 44);
+}
+.nav_brand {
+    font-weight: bold;
+    font-style: normal;
+    font-size: 22px;
+    list-style-type: none;
+}
+
+
+
+/*------main---------*/
+body{   
+    background-color: #f7f1e5;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    position: relative;
+    padding-bottom: 10%;
+    
+}  
+.bg{
+    background-image: url(../Assets/gondola.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 50px;
+    
+}
+p{
+    text-align: center;
+}
+h1{
+    padding: 15px;
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+}
+h2{
+    text-align: center;
+    padding-right: 15px;
+    padding-bottom: 10px;
+}
+section article{
+    padding: 25px;
+    padding-top: 0;
+    text-align: center;
+
+}
+.hero{
+    display: inline-block;
+    width: 100%;
+
+}
+.hero_content{
+    display: inline-block;
+    width: 30%;
+    padding: 20px;
+    position: relative;
+
+}
+
+
+main section ul li{
+    padding-bottom: 15px;
+    padding-right: 20px;
+    list-style: none;
+    display: inline-block; 
+    margin: 0px 10px;
+}
+section div{
+    
+    padding: 5px;
+    margin-right: 20px;
+    display: inline-block;
+    width: 48%;
+}
+section h2{
+    padding: 32px;
+}
+
+.img1{
+    height: 200px;
+    width: 200px;
+}.img2{
+    height: 380px;
+    width: 190px;
+}
+.img3{
+    margin: 20px;
+    padding: 25px;
+    height: 600px;
+    width: 500px;
+}
+main{
+    text-align: center;
+}
+main form{
+    padding: 50px;
+    margin: 50px; 
+}
+.formu-tam{
+    text-align: left;
+    padding: 20px;
+    margin: 20px;
+    height: 40px;
+    width: 150px;
+}
+.formu-textotarea{
+    padding-top: 5px;
+    width: 52%;
+}
+tr td{
+    padding-top: 25px;
+    padding-left: 20px;
+}
+tr td p{
+    font-size: 24px;
+    font-style: italic;
+    color: darkred;
+    padding: 5px;
+    margin-left: 10px;
+}
+.mapa{
+    width: 546px;
+    height: 350px;
+}
+main table{
+    margin-left: 90px;
+}
+
+
+
+
+
+/*-------footer---------*/
+footer{ 
+    background-color: rgb(32, 32, 32);
+    padding: 50 0; 
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+}
+footer ul{
+    text-align: center;
+    display: inline;
+}
+footer ul li{
+    padding: 10px;
+    color: goldenrod;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-right: 50px ;
+    width: 28%;
+    display: inline-block; 
+}   
+.footer-img {
+    width: 50px;
+    height: 50px;
+}
