@@ -1,95 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="../CSS/Style.css">
-    <title>Document</title>
+    <title>Productos | Solial Sur</title>
 </head>
+
 <body>
     <header>
-        <nav class="nav">
-            <a class="nav-logo" href="../index.html">
-                <img src="../Assets/Logo.png" alt="Logo" >
-            </a>
-            <ul>             
-                <li><a href="../index.html">Inicio</a> </li>
+        <nav class="box">
+            <a class="nav-logo" href="../index.html"> <img src="../Assets/Logo.png" alt="Logo"></a>
+            <ul class="nav_brand">
+                <li> <a href="../index.html">Inicio</a> </li>
                 <li> <a href="productos.html">Productos </a> </li>
                 <li> <a href="ofertas.html">Ofertas</a> </li>
                 <li> <a href="sucursales.html">Sucursales</a> </li>
                 <li> <a href="contacto.html">Contacto</a> </li>
-                <li >   
-                    <input type="text" placeholder="Buscar producto.." >
-                    <input type="submit" >
-
-                </li>
             </ul>
+            <div class="box2">
+                <div>
+                    <input type="text" placeholder="Buscar producto..">
+                </div>
+                <div>
+                    <button type="reset" class="btn btn-primary">Buscar</button>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
-        <h1>Productos</h1>
-        <section >
-            <ul >
-                <li class="hero">
-                    <li>Almacen</li>
-                    <li>Celiacos</li>
-                    <li>Frescos</li>
-                    <li>Hogar y bazar</li>
-                    <li>Limpieza</li>
-                    <li>Perfumeria</li> 
-                </li>
-                <h2>Bebidas</h2>
-                <li>
-                    
-                    <li>
-                        
-                        <img class="img2" src="../Assets/Productos/bacardi.png" alt="bacardi">
-                        <img class="img2" src="../Assets/Productos/bianchi.png" alt="bianchi">
-                        <img class="img2" src="../Assets/Productos/COKEE.png" alt="Coca-Cola">
-    
-                    <li>
-                        <img class="img2" src="../Assets/Productos/fanta.png" alt="Fanta">
-                        <img class="img2" src="../Assets/Productos/FERNET.png" alt="FERNET">
-                        <img class="img2" src="../Assets/Productos/fresh.png" alt="Fresh">
+        <h1 class="bg">Productos</h1>
+        <section class="box2">
+            <article class="container1">
+                <ul class="list-group">
+                    <li class="list-group-item active" aria-current="true">CATEGORIAS</li>
+                    <li class="list-group-item">Bebidas</li>
+                    <li class="list-group-item">Bazar</li>
+                    <li class="list-group-item">Frescos</li>
+                    <li class="list-group-item">Perfumeria</li>
+                    <li class="list-group-item">Limpieza</li>
+                </ul>
+            </article>
+            <article class="grid2">
+                <h4 class="box_grid2 c0">Bebidas</h4>
+                <div class="box_grid2 c1">
+                    <img class=" img2" src="../Assets/Productos/bacardi.png" alt="bacardi">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="box_grid2 c2">
+                    <img class="img2" src="../Assets/Productos/bianchi.png" alt="bianchi">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="box_grid2 c3">
+                    <img class="img2" src="../Assets/Productos/COKEE.png" alt="Coca-Cola">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="box_grid2 c4">
+                    <img class="img2" src="../Assets/Productos/fanta.png" alt="Fanta">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="box_grid2 c52">
+                    <img class="img2" src="../Assets/Productos/schneider.png" alt="Fanta">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="box_grid2 c6">
+                    <img class="img2" src="../Assets/Productos/fresh.png" alt="Fanta">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="box_grid2 c7">
+                    <img class="img2" src="../Assets/Productos/scheweppes.png" alt="Fanta">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="box_grid2 c8">
+                    <img class="img2" src="../Assets/Productos/FERNET.png" alt="Fanta">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="box_grid2 c9">
+                    <img class="img2" src="../Assets/Productos/gancia.png" alt="Fanta">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="box_grid2 c10">
+                    <img class="img2" src="../Assets/Productos/smirnoff.png" alt="Fanta">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="box_grid2 c11">
+                    <img class="img2" src="../Assets/Productos/toros.png" alt="Fanta">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="box_grid2 c12">
+                    <img class="img2" src="../Assets/Productos/whisky.png" alt="Fanta">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                <ul class="pagination justify-content-center Page navigation example  box_grid2 c14">
+                    <li class="page-item disabled">
+                        <a class="page-link">Previous</a>
                     </li>
-    
-                    <li>
-                        <img class="img2" src="../Assets/Productos/gancia.png" alt="Gancia">
-                        <img class="img2" src="../Assets/Productos/scheweppes.png" alt="scheweppes">
-                        <img class="img2" src="../Assets/Productos/smirnoff.png" alt="smirnoff">
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
                     </li>
-                    <li>
-                        <img class="img2" src="../Assets/Productos/toros.png" alt="Paso-de-los-toros">
-                        <img class="img2" src="../Assets/Productos/whisky.png" alt="whisky">
-                        <img class="img2" src="../Assets/Productos/schneider.png" alt="schneider">
-                    </li>
-                </li>
-            </ul>
-                
-                
+                </ul>
+            </article>
+
         </section>
     </main>
-    <footer>
-        <ul>
-            <li>
-                <h2><img class="footer-img" src="../Assets/Logo.png" ></h2>
-                <p>Atencion al cliente: 0800-6646846 o 112151653.  </p>
-            </li> 
-            <li>
-                <h2>Medios de pago</h2>
-                <img class="footer-img" src="../Assets/mp.png" alt="Mercado pago">
-                <img class="footer-img" src="../Assets/dinero.png" alt="Efectivo">
-                <img class="footer-img" src="../Assets/paypal.png" alt="PayPal"> 
-            </li>
-            <li>                
-                <h2>Seguinos</h2>
-                <img class="footer-img" src="../Assets/twitter.png"  alt="twitter" >
-                <img class="footer-img" src="../Assets/facebook.png" alt="Facebook">
-                <img class="footer-img" src="../Assets/instagram.png" alt="Instagram">
-            </li>  
-        </ul>
+    <footer class="box">
+        <div class="box_content">
+            <img src="../Assets/Logo.png" alt="Logo" height="50px" width="100px">
+            <p class="p-w">Atencion al cliente: 0800-888888 o 1122222222. </p>
+        </div>
+        <div class="box_content">
+            <p class="p-w">Copyright © todos los derechos reservados - Solial Sur</p>
+        </div>
+        <div class="box_content">
+            <h3>Seguinos en nuestas redes</h3>
+            <div>
+                <img class="img4" src="../Assets/twitter.png" alt="twitter">
+                <img class="img4" src="../Assets/facebook.png" alt="Facebook">
+                <img class="img4" src="../Assets/instagram.png" alt="Instagram">
+            </div>
+        </div>
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+        integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+        integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

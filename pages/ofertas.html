@@ -1,72 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="../CSS/Style.css">
     <title>Document</title>
 </head>
+
 <body>
     <header>
-        <nav class="nav">
-            <a class="nav-logo" href="../index.html">
-                <img src="../Assets/Logo.png" alt="Logo">
-            </a>
-            <ul>             
-                <li><a href="../index.html">Inicio</a> </li>
+        <nav class="box">
+            <a class="nav-logo" href="../index.html"> <img src="../Assets/Logo.png" alt="Logo"></a>
+            <ul class="nav_brand">
+                <li> <a href="../index.html">Inicio</a> </li>
                 <li> <a href="productos.html">Productos </a> </li>
                 <li> <a href="ofertas.html">Ofertas</a> </li>
                 <li> <a href="sucursales.html">Sucursales</a> </li>
                 <li> <a href="contacto.html">Contacto</a> </li>
-                <li >   
-                    <input type="text" placeholder="Buscar producto.." >
-                    <input type="submit" >
-
-                </li>
             </ul>
+            <div class="box2">
+                <div>
+                    <input type="text" placeholder="Buscar producto..">
+                </div>
+                <div>
+                    <button type="reset" class="btn btn-primary">Buscar</button>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
-        <section>
-            <h1>Ofertas</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi eligendi quibusdam vitae inventore minus, libero explicabo. Doloremque quibusdam quae numquam!</p>
-            <ul>
-                <li>
-                    <img class=" img3" src="../Assets/oferta1.png" alt="oferta1">
-                    <img class=" img3" src="../Assets/oferta4.png" alt="oferta4">
-                </li>
-                <li>
-                <img class=" img3" src="../Assets/oferta22.jpg" alt="oferta2">
-                    <img class=" img3" src="../Assets/oferta3.png" alt="oferta3">
-                </li> 
-                <img width="950px" height="80%" src="../Assets/oferta5.png" alt="oferta5">
-            </ul>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dicta magni accusamus! Nisi, eligendi! Quidem soluta in similique modi sit molestias quibusdam, aspernatur animi exercitationem? Veritatis consequuntur quis ullam qui voluptas velit laudantium doloribus magni cupiditate, tempora ut eaque consequatur, quasi quo possimus. Pariatur at amet eum labore maiores nesciunt quasi qui recusandae mollitia aliquid dolor sit consectetur temporibus similique ducimus commodi quibusdam deserunt dolores, atque nemo vero aperiam! Cumque, non esse. Debitis atque corrupti accusantium, consectetur possimus reiciendis nihil in quia consequatur tempora? Eum magni maxime vitae sit omnis vero! Quae nam saepe odit vero quidem rem et ratione!
-            </p>
-        </section>
-        
-    </main>
-    <footer>
-        <ul>
-            <li>
-                <h2><img class="footer-img" src="../Assets/Logo.png" ></h2>
-                <p>Atencion al cliente: 0800-6646846 o 112151653.  </p>
-            </li> 
-            <li>
-                <h2>Medios de pago</h2>
-                <img class="footer-img" src="../Assets/mp.png" alt="Mercado pago">
-                <img class="footer-img" src="../Assets/dinero.png" alt="Efectivo">
-                <img class="footer-img" src="../Assets/paypal.png" alt="PayPal"> 
-            </li>
-            <li>                
-                <h2>Seguinos</h2>
-                <img class="footer-img" src="../Assets/twitter.png"  alt="twitter" >
-                <img class="footer-img" src="../Assets/facebook.png" alt="Facebook">
-                <img class="footer-img" src="../Assets/instagram.png" alt="Instagram">
-            </li>  
-        </ul>
-    </footer>
+        <h1 class="bg">Ofertas</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi eligendi quibusdam vitae inventore
+            minus, libero explicabo. Doloremque quibusdam quae numquam!</p>
+        <section class="grid">
+            <div class="box_grid c1">
+                <img src="../Assets/oferta1.png" alt="oferta1" class="img5">
+            </div>
+            <div class="box_grid c2">
+                <img src="../Assets/oferta4.png" alt="oferta4" class="img5">
+            </div>
+            <div class="box_grid c3">
+                <img src="../Assets/oferta22.jpg" alt="oferta2" class="img5">
+            </div>
+            <div class="box_grid c4">
+                <img src="../Assets/oferta3.png" alt="oferta3" class="img5">
+            </div>
+            <div class="box_grid c5">
+                <img width="100%" height="300px" src="../Assets/oferta5.png" alt="oferta5">
+            </div>
 
+        </section>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dicta magni accusamus! Nisi, eligendi!
+            Quidem soluta in similique modi sit molestias quibusdam, aspernatur animi exercitationem? Veritatis
+            consequuntur quis ullam qui voluptas velit laudantium doloribus magni cupiditate, tempora ut eaque
+            consequatur, quasi quo possimus. Pariatur at amet eum labore maiores nesciunt quasi qui recusandae
+            mollitia aliquid dolor sit consectetur temporibus similique ducimus commodi quibusdam deserunt dolores,
+            atque nemo vero aperiam! Cumque, non esse. Debitis atque corrupti accusantium, consectetur possimus
+            reiciendis nihil in quia consequatur tempora? Eum magni maxime vitae sit omnis vero! Quae nam saepe odit
+            vero quidem rem et ratione!
+        </p>
+    </main>
+    <footer class="box">
+        <div class="box_content">
+            <img src="../Assets/Logo.png" alt="Logo" height="50px" width="100px">
+            <p class="p-w">Atencion al cliente: 0800-888888 o 1122222222. </p>
+        </div>
+        <div class="box_content">
+            <p class="p-w">Copyright © todos los derechos reservados - Solial Sur</p>
+        </div>
+        <div class="box_content">
+            <h3>Seguinos en nuestas redes</h3>
+            <div>
+                <img class="img4" src="../Assets/twitter.png" alt="twitter">
+                <img class="img4" src="../Assets/facebook.png" alt="Facebook">
+                <img class="img4" src="../Assets/instagram.png" alt="Instagram">
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+        integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+        integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
