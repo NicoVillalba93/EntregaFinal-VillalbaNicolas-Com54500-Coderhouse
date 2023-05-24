@@ -75,17 +75,6 @@ h2{
     padding-right: 15px;
     padding-bottom: 10px;
 }
-section article{
-    padding: 25px;
-    padding-top: 0;
-    text-align: center;
-
-}
-.hero{
-    display: inline-block;
-    width: 100%;
-
-}
 .hero_content{
     display: inline-block;
     width: 30%;
