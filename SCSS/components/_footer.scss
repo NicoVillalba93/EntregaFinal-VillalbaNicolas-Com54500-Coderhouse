@@ -1,0 +1,28 @@
+footer {
+    background-color: #2d2f31;
+    bottom: 0;
+    width: 100%;
+    &.box {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        .box_content {
+            display: flex;
+            flex-direction: column;
+            width: 60%;
+            justify-content: center;
+            align-items: center;
+            .img4 {
+                @include img(30px,30px,contain);
+            }
+            .p-w {
+                color: #e2ded5;
+            }
+            h4 {
+                @include fonts(center, none, none, 20px, 'Times New Roman');
+                color: #e2ded5;
+        
+            }
+        }
+    }
+}

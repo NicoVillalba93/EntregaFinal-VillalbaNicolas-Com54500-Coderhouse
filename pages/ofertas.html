@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../Assets/favicon.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="../CSS/Style.css">
@@ -13,57 +14,91 @@
 
 <body>
     <header>
-        <nav class="box">
-            <a class="nav-logo" href="../index.html"> <img src="../Assets/Logo.png" alt="Logo"></a>
-            <ul class="nav_brand">
-                <li> <a href="../index.html">Inicio</a> </li>
-                <li> <a href="productos.html">Productos </a> </li>
-                <li> <a href="ofertas.html">Ofertas</a> </li>
-                <li> <a href="sucursales.html">Sucursales</a> </li>
-                <li> <a href="contacto.html">Contacto</a> </li>
-            </ul>
-            <div class="box2">
-                <div>
-                    <input type="text" placeholder="Buscar producto..">
-                </div>
-                <div>
-                    <button type="reset" class="btn btn-primary">Buscar</button>
+        <nav class="navbar navbar-dark bg-dark fixed-top navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="nav-logo" href="../index.html"> <img src="../Assets/Logo.png" alt="Logo"></a> <button
+                    class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                    aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Solial Sur</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="nav_brand navbar-nav justify-content-center flex-grow-1 pe-3">
+                            <li> <a href="../index.html">Inicio</a> </li>
+                            <li class="nav-item dropdown"> <a class="dropdown-toggle" href="../pages/productos.html"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Productos
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="../pages/productos.html">Todos</a></li>
+                                    <li><a class="dropdown-item" href="../pages/productos.html">Bazar</a></li>
+                                    <li><a class="dropdown-item" href="../pages/productos.html">Bebidas</a></li>
+                                    <li><a class="dropdown-item" href="../pages/productos.html">Carniceria</a></li>
+                                    <li><a class="dropdown-item" href="../pages/productos.html">Congelados</a></li>
+                                    <li><a class="dropdown-item" href="../pages/productos.html">Despensa</a></li>
+                                    <li><a class="dropdown-item" href="../pages/productos.html">Frutas y verduras</a></li>
+                                    <li><a class="dropdown-item" href="../pages/productos.html">Frescos</a></li>
+                                    <li><a class="dropdown-item" href="../pages/productos.html">Perfumeria</a></li>
+                                    <li><a class="dropdown-item" href="../pages/productos.html">Mascotas</a></li>
+                                    <li><a class="dropdown-item" href="../pages/productos.html">Limpieza</a></li>
+                                </ul>
+                            </li>
+                            <li> <a href="../pages/ofertas.html">Ofertas</a> </li>
+                            <li> <a href="../pages/sucursales.html">Sucursales</a> </li>
+                            <li> <a href="../pages/contacto.html">Contacto</a> </li>
+                        </ul>
+                        <div class="box2">
+                            <div>
+                                <input type="text" placeholder="Buscar producto..">
+                                <button type="reset" class="btn btn-primary">Buscar</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </nav>
     </header>
     <main>
         <h1 class="bg">Ofertas</h1>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi eligendi quibusdam vitae inventore
-            minus, libero explicabo. Doloremque quibusdam quae numquam!</p>
+        <p> ¡No dudes en explorar nuestros productos y ofertas especiales mientras descubres todo lo que tenemos para ofrecerte!</p>
         <section class="grid">
-            <div class="box_grid c1">
-                <img src="../Assets/oferta1.png" alt="oferta1" class="img5">
+            <div class="box_grid b0">
+                <img src="../Assets/oferta.jpg" alt="oferta" class="img5">
             </div>
-            <div class="box_grid c2">
-                <img src="../Assets/oferta4.png" alt="oferta4" class="img5">
+            <div class="box_grid b1">
+                <img src="../Assets/oferta1.jpg" alt="oferta1" class="img5">
             </div>
-            <div class="box_grid c3">
-                <img src="../Assets/oferta22.jpg" alt="oferta2" class="img5">
+            <div class="box_grid b2">
+                <img src="../Assets/oferta2.jpg" alt="oferta2" class="img5">
             </div>
-            <div class="box_grid c4">
-                <img src="../Assets/oferta3.png" alt="oferta3" class="img5">
+            <div class="box_grid b3">
+                <img src="../Assets/oferta3.jpg" alt="oferta3" class="img5">
             </div>
-            <div class="box_grid c5">
-                <img width="100%" height="300px" src="../Assets/oferta5.png" alt="oferta5">
+            <div class="box_grid b4">
+                <img src="../Assets/oferta4.jpg" alt="oferta4" class="img5">
             </div>
-
+            <div class="box_grid b5">
+                <img src="../Assets/oferta5.jpg" alt="oferta5" class="img5">
+            </div>
+            <div class="box_grid b6">
+                <img width="100%" height="300px" src="../Assets/oferta6.jpg" alt="oferta6">
+            </div>
         </section>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dicta magni accusamus! Nisi, eligendi!
-            Quidem soluta in similique modi sit molestias quibusdam, aspernatur animi exercitationem? Veritatis
-            consequuntur quis ullam qui voluptas velit laudantium doloribus magni cupiditate, tempora ut eaque
-            consequatur, quasi quo possimus. Pariatur at amet eum labore maiores nesciunt quasi qui recusandae
-            mollitia aliquid dolor sit consectetur temporibus similique ducimus commodi quibusdam deserunt dolores,
-            atque nemo vero aperiam! Cumque, non esse. Debitis atque corrupti accusantium, consectetur possimus
-            reiciendis nihil in quia consequatur tempora? Eum magni maxime vitae sit omnis vero! Quae nam saepe odit
-            vero quidem rem et ratione!
+        <p>Descuentos no acumulables con otras promociones y/o descuentos vigentes.
+            No incluye artículos del listado de precios Justos, productos acordados con el 
+            gobierno ni productos de elaboración propia.
+            El descuento se aplica sobre el menor precio regular.
+            Beber con moderación. Prohibida la venta de alcohol a menores de 18 años.
         </p>
     </main>
+    
     <footer class="box">
         <div class="box_content">
             <img src="../Assets/Logo.png" alt="Logo" height="50px" width="100px">

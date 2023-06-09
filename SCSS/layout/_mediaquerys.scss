@@ -1,0 +1,211 @@
+@media screen and (min-width:380px) and (max-width:768px) {
+
+    .nav-logo {
+        padding-top: 2px;
+        padding-bottom: 2px;
+
+        img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 120px;
+            height: 60px;
+        }
+    }
+
+    .nav_brand {
+        font-size: 10px;
+        width: 100%;
+        gap: 5px;
+        padding: 5px;
+        justify-content: center;
+        display: flex;
+
+        li a {
+            font-size: 20px;
+        }
+    }
+
+    nav .box2 {
+        display: flex;
+        flex-direction: row;
+    }
+    main .box2{
+        flex-wrap: nowrap;
+        .grid2 {
+        grid-template-columns: repeat(2, 45%);
+        gap: 10px;
+        grid-template-areas:
+            'area0 area0 '
+            'area1 area2 '
+            ' area3 area4 '
+            ' area5 area6 '
+            'area7 area8'
+            'area9 area10'
+            ' area11 area12'
+            ' area13 area13';
+        }
+    }
+    .box {
+        flex-direction: column;
+        text-align: center;
+    }
+    main .box4{
+        flex-direction: column;
+        p{
+            width: 90%;
+        }
+        iframe {
+            @include img(350px, 90%, contain);
+        }  
+        img {
+            @include img(350px, 90%, contain);
+        }
+        .mapa {
+            width: 100%;
+            @include img(350px, 90%, contain);
+            
+        }
+    }
+    main section .box {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: auto;
+        grid-template-areas:
+            'area1 area2 '
+            'area3 area4 '
+            'area5 area6';
+        a img {
+            width: 90%;
+        }
+    }
+
+    .grid {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    footer {
+        &.box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+//-------------------------------media 480px-----------------------------------//
+@media (max-width:480px) {
+    .nav_brand {
+        font-size: 10px;
+        width: 100%;
+        gap: 5px;
+        padding: 5px;
+        justify-content: center;
+        display: flex;
+        li a {
+            font-size: 16px;
+        }
+    }
+
+    .nav-logo {
+        padding-top: 2px;
+        padding-bottom: 2px;
+        width: 120px;
+        justify-content: center;
+        align-items: center;
+        img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 60px;
+        }
+    }
+
+    nav .box2 {
+        padding: 0px;
+        flex-direction: row;
+        gap: 5px;
+    }
+
+
+
+    main section .box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    main .box4{
+        display: flex;
+        flex-direction: column;
+        p{
+            width: 90%;
+        }
+        iframe {
+            @include img(350px, 90%, contain);
+        }  
+        img {
+            @include img(350px, 90%, contain);
+        }
+        .mapa {
+            width: 100%;
+            @include img(350px, 90%, contain);
+            
+        }
+
+    }
+    main .box2 .container {
+        padding-top: 2px;
+        padding-bottom: 2px;
+        width: 100%;
+        ul li {
+            display: flex;
+            padding: 0px;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    main .box2 .grid2 {
+        grid-template-columns: repeat(1, 90%);
+        gap: 10px;
+        width: 55%;
+        grid-template-areas:
+            'area0 '
+            'area1 '
+            'area2 '
+            'area3 '
+            'area4 '
+            'area5 '
+            'area6 '
+            'area7 '
+            'area8 '
+            'area9 '
+            'area10 '
+            'area11'
+            'area12 '
+            'area13 ';
+        .box_grid2 {
+            &.c14 {
+                width: 30px;
+            }
+        }
+    }
+    .grid {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    footer {
+        &.box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}

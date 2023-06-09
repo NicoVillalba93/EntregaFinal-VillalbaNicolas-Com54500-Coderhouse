@@ -1,0 +1,26 @@
+@mixin flex-column{
+    display: flex;
+    flex-direction: column;
+}
+@mixin flexbox($direction, $justify, $align, $wrap, $gap){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    flex-wrap: $wrap;
+    gap: $gap;
+}
+
+@mixin img($height, $width, $object){
+    height: $height;
+    width: $width;
+    object-fit: $object;
+}
+@mixin fonts($align, $txt_transform, $txt_decoration,$f_size,$f_family){
+    text-align: $align;
+    text-transform: $txt_transform;
+    text-decoration: $txt_decoration ; 
+    font-size: $f_size;
+    font-family: $f_family;
+    
+}

@@ -1,0 +1,56 @@
+nav {
+    background-color: $main-color;
+    position: sticky;
+    z-index: 9999;
+    top: 0;
+    .fixed-top{
+        padding: 222px
+    }
+
+    .nav-logo {
+        padding: 3px;
+        padding-top: 2px;
+        width: 150px;
+        img {
+            @include img(auto, 110px, cover);
+        }
+    }
+
+    .nav_brand {
+        display: flex;
+        font-weight: bold;
+        font-style: normal;
+        font-size: 22px;
+        list-style-type: none;
+        gap: 30px;
+        padding-top: 15px;
+        
+
+    }
+    li a {
+        font-family: 'Source Sans Pro', sans-serif;
+        text-decoration: none;
+        color: $nav-color;
+        &:hover {
+            text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 30px $nav-color, 0 0 50px $nav-color, 0 0 60px $nav-color, 0 0 80px $nav-color, 0 0 100px $nav-color;
+            font-size: 24px;
+        }
+        
+    }
+}
+    .box2 div {
+        display:flex;
+        gap: 10px;
+        padding-top: 15px;
+        input{        
+            height: 30px;
+            border-radius: 5px;
+        }
+        button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 30px;
+            border-radius: 5px;
+        }
+    }

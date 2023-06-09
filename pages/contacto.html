@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../Assets/favicon.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="../CSS/Style.css">
@@ -13,72 +14,100 @@
 
 <body>
     <header>
-        <nav class="box">
-            <a class="nav-logo" href="../index.html"> <img src="../Assets/Logo.png" alt="Logo"></a>
-            <ul class="nav_brand">
-                <li> <a href="../index.html">Inicio</a> </li>
-                <li> <a href="productos.html">Productos </a> </li>
-                <li> <a href="ofertas.html">Ofertas</a> </li>
-                <li> <a href="sucursales.html">Sucursales</a> </li>
-                <li> <a href="contacto.html">Contacto</a> </li>
-            </ul>
-            <div class="box2">
-                <div>
-                    <input type="text" placeholder="Buscar producto..">
-                </div>
-                <div>
-                    <button type="reset" class="btn btn-primary">Buscar</button>
+        <nav class="navbar navbar-dark bg-dark fixed-top navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="nav-logo" href="../index.html"> <img src="../Assets/Logo.png" alt="Logo"></a> <button
+                    class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                    aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Solial Sur</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="nav_brand navbar-nav justify-content-center flex-grow-1 pe-3">
+                            <li> <a href="../index.html">Inicio</a> </li>
+                            <li class="nav-item dropdown"> <a class="dropdown-toggle" href="../pages/productos.html"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Productos
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="../pages/productos.html">Todos</a></li>
+                                    <li><a class="dropdown-item" href="../pages/productos.html">Bazar</a></li>
+                                    <li><a class="dropdown-item" href="../pages/productos.html">Bebidas</a></li>
+                                    <li><a class="dropdown-item" href="../pages/productos.html">Carniceria</a></li>
+                                    <li><a class="dropdown-item" href="../pages/productos.html">Congelados</a></li>
+                                    <li><a class="dropdown-item" href="../pages/productos.html">Despensa</a></li>
+                                    <li><a class="dropdown-item" href="../pages/productos.html">Frutas y verduras</a></li>
+                                    <li><a class="dropdown-item" href="../pages/productos.html">Frescos</a></li>
+                                    <li><a class="dropdown-item" href="../pages/productos.html">Perfumeria</a></li>
+                                    <li><a class="dropdown-item" href="../pages/productos.html">Mascotas</a></li>
+                                    <li><a class="dropdown-item" href="../pages/productos.html">Limpieza</a></li>
+                                </ul>
+                            </li>
+                            <li> <a href="../pages/ofertas.html">Ofertas</a> </li>
+                            <li> <a href="../pages/sucursales.html">Sucursales</a> </li>
+                            <li> <a href="../pages/contacto.html">Contacto</a> </li>
+                        </ul>
+                        <div class="box2">
+                            <div>
+                                <input type="text" placeholder="Buscar producto..">
+                                <button type="reset" class="btn btn-primary">Buscar</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </nav>
     </header>
+
     <main>
         <h1 class="bg">Contactenos</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore qui molestias voluptate impedit nisi, at
-            consequuntur a quam voluptates et sequi corrupti nesciunt recusandae excepturi commodi minus quis
-            corporis, illo cumque quas vitae, ratione esse animi? Aperiam ad doloribus explicabo atque rerum,
-            necessitatibus iusto nulla repellat blanditiis hic accusamus rem facere temporibus voluptatum.
-            Laudantium cumque eum ipsa possimus nisi, libero repellat facere! Sunt tempore vero eveniet, quia
-            laborum illum quasi magni labore expedita non ipsum error impedit quae exercitationem veniam minima
-            praesentium qui similique hic. Itaque distinctio quod repudiandae, magnam odio voluptatum aperiam esse
-            ducimus alias quibusdam perspiciatis laudantium accusamus praesentium nam labore perferendis aliquid
-            cupiditate, nihil magni eos velit explicabo impedit et adipisci. Expedita possimus nulla sequi aliquid.
-            Similique optio, perspiciatis quae soluta, iure eaque dicta suscipit deleniti quasi excepturi
-            praesentium voluptatibus velit voluptate exercitationem? Dignissimos amet corporis aut eligendi. Autem
-            laboriosam temporibus ipsum quod. Repudiandae officiis iusto commodi, autem eaque veritatis dolores odio
-            odit, magnam ea modi? Tempore itaque sed maiores sunt ipsum distinctio laborum assumenda unde, maxime
-            necessitatibus tenetur. Odio, quo impedit. Laudantium commodi maxime modi eius vitae porro officia
-            numquam nesciunt, sapiente saepe aliquam, veritatis perspiciatis corporis tenetur eaque tempora in?
-            Nesciunt dolor repudiandae iste quos!</p>
+        <p>En nuestro supermercado, la calidad y la frescura son nuestra prioridad. Trabajamos en estrecha colaboración
+            con proveedores confiables y seleccionamos cuidadosamente nuestros productos para garantizar que recibas lo
+            mejor en cada compra.
+            Si tienes alguna pregunta, comentario o sugerencia, no dudes en ponerte en contacto con nosotros. Estamos
+            aquí para escucharte y brindarte el mejor servicio posible. Puedes comunicarte con nuestro equipo de
+            atención al cliente a través de nuestro formulario en línea, por teléfono o visitándonos en nuestra
+            ubicación física.
+            Agradecemos tu visita a nuestra página web de supermercados y esperamos poder servirte pronto. ¡No dudes en
+            explorar nuestros productos y ofertas especiales mientras descubres todo lo que tenemos para ofrecerte!
+            ¡Gracias por elegirnos como tu supermercado de confianza!!</p>
         <form>
-            <div class="box2">
+            <div class="box4">
                 <h2>Ingrese sus datos</h2>
             </div>
-            <div class="box2">
+            <div class="box4">
                 <input class="formu-tam" type="text" name="Nombre" placeholder="Nombre">
                 <input class="formu-tam" type="text" name="Apellido" placeholder="Apellido">
                 <input class="formu-tam" type="number" name="DNI" placeholder="DNI">
             </div>
-            <div class="box2">
+            <div class="box4">
                 <input class="formu-tam" type="email" name="Email" placeholder="Email">
                 <input class="formu-tam" type="number" name="Codigo Postal" placeholder="Codigo Postal">
                 <input class="formu-tam" type="text" name="DNI" placeholder="Direccion">
             </div>
-            <div class="box2">
+            <div class="box4">
                 <input class="formu-tam" type="text" name="Ciudad" placeholder="Ciudad">
                 <input class="formu-tam" type="tel" name="Telefono" placeholder="Telefono">
                 <input class="formu-tam" type="text" name="Asunto" placeholder="Asunto">
             </div>
-            <div class="box2">
+            <div class="box4">
                 <textarea class="formu-textotarea" name="Mensaje" id="" cols="30" rows="10"
                     placeholder="Deje su mensaje..."></textarea>
             </div>
-            <div class="box2">
+            <div class="box4">
                 <button type="submit" class="btn btn-primary">Enviar</button>
                 <button type="reset" class="btn btn-primary">resetear</button>
             </div>
         </form>
     </main>
+
     <footer class="box">
         <div class="box_content">
             <img src="../Assets/Logo.png" alt="Logo" height="50px" width="100px">
@@ -96,6 +125,7 @@
             </div>
         </div>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
         integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
         crossorigin="anonymous"></script>

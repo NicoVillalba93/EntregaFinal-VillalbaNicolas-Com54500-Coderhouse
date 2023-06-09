@@ -1,0 +1,13 @@
+.formu-tam {
+    text-align: left;
+    @include img(40px, 213px, none);
+    border-radius: 4px;
+    padding-left: 5px;
+}
+
+.formu-textotarea {
+    padding-top: 5px;
+    padding-left: 5px;
+    width: 52%;
+    border-radius: 4px;
+}

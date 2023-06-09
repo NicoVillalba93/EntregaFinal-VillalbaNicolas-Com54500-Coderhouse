@@ -1,0 +1,33 @@
+.grid2 {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(4, 150px);
+    grid-template-rows: auto;
+    grid-template-areas:
+        '. area0 area0 .'
+        'area1 area2 area3 area4'
+        'area5 area6 area7 area8'
+        'area9 area10 area11 area12'
+        '. area13 area13 .'
+    ;
+
+    .box_grid2 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        .img2 {
+            @include img(165px, 150px, contain);
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+
+        @for $i from 0 to 14 {
+            &.b#{$i} {
+                grid-area: area#{$i};
+                text-align: center;
+            }
+        }
+    }
+}

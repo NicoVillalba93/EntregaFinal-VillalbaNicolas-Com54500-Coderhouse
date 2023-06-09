@@ -1,0 +1,92 @@
+main {
+    margin-top: 60px;
+    .box {
+        @include flexbox(row, space-between, center, wrap, 0px);
+        .img {  
+            @include img(190px, 200px, contain);
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+    }
+
+    .box2 {
+        @include flexbox(row, center, start, nowrap, 20px);
+        padding: 20px 0px;
+        .container {
+            @include img(100%, 40%,none);
+            padding: 10px;
+            background-color: #e2ded5;
+        }
+    }
+
+    .box3 {
+        padding: 40px;
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 0px;
+        height: 250px;
+        .box_content {
+            display: flex;
+            flex-direction: column;
+            width: 60%;
+            justify-content: center;
+            align-items:center;
+            &.bordes {
+                border-right: 2px solid #7c7b7b;
+                border-left: 2px solid #7c7b7b;
+                padding: 10px;
+            }
+        }
+    }
+
+    .box4 {
+        padding: 20px 0px;
+        @include flexbox(row, center, center, wrap, 20px);
+        img {
+            @include img(350px, 45%, contain);
+        }
+        .mapa {
+            width: 100%;
+            @include img(350px, 45%, contain);
+            
+        }
+        p{
+            width: 45%;
+        }
+    }
+
+    p {
+        color: $main-color;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .p-w {
+        color: #e2ded5;
+    }
+}
+//---------------Titulos------------------//
+    h1 {
+        padding: 15px;
+        color: $nav-color;
+        @include fonts(center, none, uppercase, 24px,sans-serif);
+        &.bg {
+            background-image: url(../Assets/fondo.jpg);
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+            padding: 30px;
+            margin-bottom: 20px;
+        }
+    }
+
+    h2 {
+        padding: 25px 0px;
+        @include fonts(center, uppercase, none, 23px, $font);
+        color: $main-color;
+    }
+
+    h3 {
+        @include fonts(center, none, underline, 22px, $font);
+    }
