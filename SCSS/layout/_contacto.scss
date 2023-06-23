@@ -11,3 +11,14 @@
     width: 52%;
     border-radius: 4px;
 }
+
+
+form {
+    &.bg {
+        background-image: linear-gradient(#f5f5f580, black), url(../Assets/banner2.jpg);
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}

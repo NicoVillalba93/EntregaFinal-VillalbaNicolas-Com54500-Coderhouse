@@ -1,32 +1,78 @@
-.grid2 {
-    display: grid;
-    gap: 5px;
-    grid-template-columns: repeat(4, 150px);
-    grid-template-rows: auto;
-    grid-template-areas:
-        '. area0 area0 .'
-        'area1 area2 area3 area4'
-        'area5 area6 area7 area8'
-        'area9 area10 area11 area12'
-        '. area13 area13 .'
-    ;
+.box_product {
+    @include flexbox(row, center, start, nowrap, 10px);
+    padding: 20px 5px;
 
-    .box_grid2 {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
+    .product {
+        @include img(100%, 40%, none);
+        padding: 10px;
+    }
 
-        .img2 {
-            @include img(165px, 150px, contain);
-            &:hover {
-                transform: scale(1.2);
+    .grid2 {
+        display: grid;
+        gap: 5px;
+        background-color: rgb(202, 201, 201);
+
+        grid-template-columns: repeat(4, 150px);
+        grid-template-rows: auto;
+        grid-template-areas:
+            '. area0 area0 .'
+            'area1 area2 area3 area4'
+            'area5 area6 area7 area8'
+            'area9 area10 area11 area12'
+            '. area13 area13 .'
+        ;
+
+        .grid_card {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+
+            .img2 {
+                @include img(60%, 100%, contain);
+
+                &:hover {
+                    transform: scale(1.1);
+                    transition-duration: 0.5s;
+
+                }
             }
-        }
 
-        @for $i from 0 to 14 {
-            &.b#{$i} {
-                grid-area: area#{$i};
-                text-align: center;
+            @for $i from 0 to 14 {
+                &.b#{$i} {
+                    grid-area: area#{$i};
+                    text-align: center;
+                    justify-content: space-around;
+
+                    @if $i !=0 and $i !=13 {
+
+                        border: 1px solid #ccc;
+                        border-radius: 5px;
+                        overflow: hidden;
+                        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                    }
+                }
+            }
+            .card-body {
+                padding: 20px;
+            }
+            .card_titulo {
+                text-decoration: none;
+                font-size: 18px;
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+            .card_precio {
+                font-size: 16px;
+                margin-bottom: 10px;
+            }
+            .card_button {
+                display: inline-block;
+                width: 100%;
+                background-color: #007bff;
+                color: #fff;
+                border: none;
+                border-radius: 5px;
+                transition: background-color 0.3s;
             }
         }
     }

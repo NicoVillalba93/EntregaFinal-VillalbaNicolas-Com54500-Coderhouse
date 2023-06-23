@@ -17,8 +17,8 @@
                 text-align: center;
             }&.b7{height: 300px;}
         }
-        .img5 {
-            @include img(600px, 100%, contain);
+        .img {
+            @include img(100%, 100%, contain);
         }
     }
 }

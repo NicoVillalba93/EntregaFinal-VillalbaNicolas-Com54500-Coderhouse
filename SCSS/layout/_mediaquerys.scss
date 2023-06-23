@@ -32,7 +32,11 @@
     }
     main .box2{
         flex-wrap: nowrap;
+    }
+    main .box_product{
+        flex-wrap: nowrap;
         .grid2 {
+        justify-content: space-evenly;
         grid-template-columns: repeat(2, 45%);
         gap: 10px;
         grid-template-areas:
@@ -156,7 +160,7 @@
         }
 
     }
-    main .box2 .container {
+    main .box_product .product {
         padding-top: 2px;
         padding-bottom: 2px;
         width: 100%;
@@ -170,7 +174,8 @@
         }
     }
 
-    main .box2 .grid2 {
+    main .box_product .grid2 {
+        justify-content: space-evenly;
         grid-template-columns: repeat(1, 90%);
         gap: 10px;
         width: 55%;

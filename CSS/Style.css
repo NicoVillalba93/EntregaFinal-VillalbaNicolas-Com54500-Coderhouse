@@ -111,6 +111,7 @@ main .box {
   align-items: center;
   flex-wrap: wrap;
   gap: 0px;
+  padding: 10px;
 }
 main .box .img {
   height: 190px;
@@ -119,6 +120,7 @@ main .box .img {
 }
 main .box .img:hover {
   transform: scale(1.2);
+  transition-duration: 0.8s;
 }
 main .box2 {
   display: flex;
@@ -139,7 +141,7 @@ main .box2 .container {
 main .box3 {
   padding: 40px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin: 20px 0px;
   height: 250px;
 }
@@ -182,9 +184,11 @@ main p {
   color: #191919;
   text-align: center;
   margin-bottom: 10px;
+  padding: 0px 20px;
 }
 main .p-w {
   color: #e2ded5;
+  text-align: center;
 }
 
 h1 {
@@ -196,17 +200,16 @@ h1 {
   font-size: 24px;
   font-family: sans-serif;
 }
-h1.bg {
+h1.gradiente {
+  width: 100%;
+  height: 100px;
   background-image: url(../Assets/fondo.jpg);
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
   padding: 30px;
   margin-bottom: 20px;
 }
 
 h2 {
-  padding: 25px 0px;
+  padding-top: 25px;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
@@ -223,81 +226,186 @@ h3 {
   font-family: "Fjalla One", sans-serif;
 }
 
-.grid2 {
+a {
+  text-decoration: none;
+}
+
+.box_product {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+  flex-wrap: nowrap;
+  gap: 10px;
+  padding: 20px 5px;
+}
+.box_product .product {
+  height: 100%;
+  width: 40%;
+  object-fit: none;
+  padding: 10px;
+}
+.box_product .grid2 {
   display: grid;
   gap: 5px;
+  background-color: rgb(202, 201, 201);
   grid-template-columns: repeat(4, 150px);
   grid-template-rows: auto;
   grid-template-areas: ". area0 area0 ." "area1 area2 area3 area4" "area5 area6 area7 area8" "area9 area10 area11 area12" ". area13 area13 .";
 }
-.grid2 .box_grid2 {
+.box_product .grid2 .grid_card {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
-.grid2 .box_grid2 .img2 {
-  height: 165px;
-  width: 150px;
+.box_product .grid2 .grid_card .img2 {
+  height: 60%;
+  width: 100%;
   object-fit: contain;
 }
-.grid2 .box_grid2 .img2:hover {
-  transform: scale(1.2);
+.box_product .grid2 .grid_card .img2:hover {
+  transform: scale(1.1);
+  transition-duration: 0.5s;
 }
-.grid2 .box_grid2.b0 {
+.box_product .grid2 .grid_card.b0 {
   grid-area: area0;
   text-align: center;
+  justify-content: space-around;
 }
-.grid2 .box_grid2.b1 {
+.box_product .grid2 .grid_card.b1 {
   grid-area: area1;
   text-align: center;
+  justify-content: space-around;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-.grid2 .box_grid2.b2 {
+.box_product .grid2 .grid_card.b2 {
   grid-area: area2;
   text-align: center;
+  justify-content: space-around;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-.grid2 .box_grid2.b3 {
+.box_product .grid2 .grid_card.b3 {
   grid-area: area3;
   text-align: center;
+  justify-content: space-around;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-.grid2 .box_grid2.b4 {
+.box_product .grid2 .grid_card.b4 {
   grid-area: area4;
   text-align: center;
+  justify-content: space-around;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-.grid2 .box_grid2.b5 {
+.box_product .grid2 .grid_card.b5 {
   grid-area: area5;
   text-align: center;
+  justify-content: space-around;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-.grid2 .box_grid2.b6 {
+.box_product .grid2 .grid_card.b6 {
   grid-area: area6;
   text-align: center;
+  justify-content: space-around;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-.grid2 .box_grid2.b7 {
+.box_product .grid2 .grid_card.b7 {
   grid-area: area7;
   text-align: center;
+  justify-content: space-around;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-.grid2 .box_grid2.b8 {
+.box_product .grid2 .grid_card.b8 {
   grid-area: area8;
   text-align: center;
+  justify-content: space-around;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-.grid2 .box_grid2.b9 {
+.box_product .grid2 .grid_card.b9 {
   grid-area: area9;
   text-align: center;
+  justify-content: space-around;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-.grid2 .box_grid2.b10 {
+.box_product .grid2 .grid_card.b10 {
   grid-area: area10;
   text-align: center;
+  justify-content: space-around;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-.grid2 .box_grid2.b11 {
+.box_product .grid2 .grid_card.b11 {
   grid-area: area11;
   text-align: center;
+  justify-content: space-around;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-.grid2 .box_grid2.b12 {
+.box_product .grid2 .grid_card.b12 {
   grid-area: area12;
   text-align: center;
+  justify-content: space-around;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-.grid2 .box_grid2.b13 {
+.box_product .grid2 .grid_card.b13 {
   grid-area: area13;
   text-align: center;
+  justify-content: space-around;
+}
+.box_product .grid2 .grid_card .card-body {
+  padding: 20px;
+}
+.box_product .grid2 .grid_card .card_titulo {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.box_product .grid2 .grid_card .card_precio {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.box_product .grid2 .grid_card .card_button {
+  display: inline-block;
+  width: 100%;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
 }
 
 .grid {
@@ -359,10 +467,14 @@ h3 {
 .grid .box_grid.b7 {
   height: 300px;
 }
-.grid .box_grid .img5 {
-  height: 600px;
+.grid .box_grid .img {
+  height: 100%;
   width: 100%;
   object-fit: contain;
+}
+
+main table {
+  background-color: rgb(128, 150, 142);
 }
 
 .formu-tam {
@@ -379,6 +491,14 @@ h3 {
   padding-left: 5px;
   width: 52%;
   border-radius: 4px;
+}
+
+form.bg {
+  background-image: linear-gradient(rgba(245, 245, 245, 0.5019607843), black), url(../Assets/banner2.jpg);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 @media screen and (min-width: 380px) and (max-width: 768px) {
@@ -411,7 +531,11 @@ h3 {
   main .box2 {
     flex-wrap: nowrap;
   }
-  main .box2 .grid2 {
+  main .box_product {
+    flex-wrap: nowrap;
+  }
+  main .box_product .grid2 {
+    justify-content: space-evenly;
     grid-template-columns: repeat(2, 45%);
     gap: 10px;
     grid-template-areas: "area0 area0 " "area1 area2 " " area3 area4 " " area5 area6 " "area7 area8" "area9 area10" " area11 area12" " area13 area13";
@@ -521,12 +645,12 @@ h3 {
     width: 90%;
     object-fit: contain;
   }
-  main .box2 .container {
+  main .box_product .product {
     padding-top: 2px;
     padding-bottom: 2px;
     width: 100%;
   }
-  main .box2 .container ul li {
+  main .box_product .product ul li {
     display: flex;
     padding: 0px;
     justify-content: center;
@@ -534,13 +658,14 @@ h3 {
     width: 100%;
     height: auto;
   }
-  main .box2 .grid2 {
+  main .box_product .grid2 {
+    justify-content: space-evenly;
     grid-template-columns: repeat(1, 90%);
     gap: 10px;
     width: 55%;
     grid-template-areas: "area0 " "area1 " "area2 " "area3 " "area4 " "area5 " "area6 " "area7 " "area8 " "area9 " "area10 " "area11" "area12 " "area13 ";
   }
-  main .box2 .grid2 .box_grid2.c14 {
+  main .box_product .grid2 .box_grid2.c14 {
     width: 30px;
   }
   .grid {

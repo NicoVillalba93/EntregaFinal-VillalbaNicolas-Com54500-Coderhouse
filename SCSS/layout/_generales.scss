@@ -2,10 +2,12 @@ main {
     margin-top: 60px;
     .box {
         @include flexbox(row, space-between, center, wrap, 0px);
+        padding: 10px;
         .img {  
             @include img(190px, 200px, contain);
             &:hover {
                 transform: scale(1.2);
+                transition-duration: 0.8s;
             }
         }
     }
@@ -23,7 +25,7 @@ main {
     .box3 {
         padding: 40px;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         margin: 20px 0px;
         height: 250px;
         .box_content {
@@ -60,10 +62,13 @@ main {
         color: $main-color;
         text-align: center;
         margin-bottom: 10px;
+        padding: 0px 20px;
+        
     }
 
     .p-w {
         color: #e2ded5;
+        text-align: center;
     }
 }
 //---------------Titulos------------------//
@@ -71,22 +76,24 @@ main {
         padding: 15px;
         color: $nav-color;
         @include fonts(center, none, uppercase, 24px,sans-serif);
-        &.bg {
+        &.gradiente {
+            width: 100%;
+            height: 100px;
             background-image: url(../Assets/fondo.jpg);
-            background-position: center;
-            background-size: cover;
-            background-attachment: fixed;
             padding: 30px;
             margin-bottom: 20px;
         }
     }
 
     h2 {
-        padding: 25px 0px;
+        padding-top: 25px;
         @include fonts(center, uppercase, none, 23px, $font);
         color: $main-color;
     }
 
     h3 {
         @include fonts(center, none, underline, 22px, $font);
+    }
+    a{
+        text-decoration: none;
     }
